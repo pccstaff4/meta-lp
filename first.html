@@ -6,6 +6,18 @@
 <title>BEST SALON REPORT｜美容室の価値を、検索へ届ける（トレース）</title>
 <meta name="description" content="美容室の強みやこだわりを言語化し、Google・AI検索でお客様に届ける仕組みを設計します。">
 <link rel="stylesheet" href="trace-assets/style.css">
+<style>
+/* First-view override: single static photo instead of the multi-photo marquee */
+.hero .heroSlides { animation: none; min-width: 100%; width: 100%; }
+.hero .heroSlideSet { width: 100%; flex: 1 1 auto; }
+.hero .heroSlideSet img.heroPhotoMain { width: 100%; flex: 1 1 auto; object-position: center 22%; }
+.hero:after { background: linear-gradient(90deg, rgba(7,27,50,.55) 0%, rgba(7,27,50,.28) 45%, rgba(7,27,50,0) 75%); }
+.hero .heroCopy .lead { color: #fff; text-shadow: 0 2px 14px rgba(0,0,0,.85), 0 1px 3px rgba(0,0,0,.9); margin-top: 20px; }
+@media (max-width: 800px) {
+  .hero .heroSlideSet img.heroPhotoMain { object-position: 68% 30%; }
+  .hero:after { background: linear-gradient(180deg, rgba(7,27,50,.15) 0%, rgba(7,27,50,.3) 55%, rgba(7,27,50,.7) 100%); }
+}
+</style>
 </head>
 <body class="antialiased">
 
@@ -22,20 +34,14 @@
   <div class="heroSlider" aria-hidden="true">
     <div class="heroSlides">
       <div class="heroSlideSet">
-        <img class="heroPhotoMain" src="trace-assets/hero-salon.jpg" alt="">
-        <img class="heroPhotoPink" src="trace-assets/hero-salon-pink.webp" alt="">
-        <img class="heroPhotoGray" src="trace-assets/hero-salon-gray.webp" alt="">
-      </div>
-      <div class="heroSlideSet">
-        <img class="heroPhotoMain" src="trace-assets/hero-salon.jpg" alt="">
-        <img class="heroPhotoPink" src="trace-assets/hero-salon-pink.webp" alt="">
-        <img class="heroPhotoGray" src="trace-assets/hero-salon-gray.webp" alt="">
+        <img class="heroPhotoMain" src="trace-assets/hero-interview.webp" alt="">
       </div>
     </div>
   </div>
   <div class="heroCopy">
     <p class="campaignBadge">広告費を見直したい美容室経営者の方へ</p>
-    <h1>大手美容クーポンサイトの<br><span>広告費を下げても、<br>新規客数は変わらなかった。</span></h1>
+    <h1>美容室専門のAI対策なら<br><span>ベストサロンレポート</span></h1>
+    <p class="lead">大手美容クーポンサイトの広告費を下げても、新規客数は変わらなかった。</p>
   </div>
 </section>
 
